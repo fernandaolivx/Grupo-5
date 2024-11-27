@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha seu Filme</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha seu Filme</h1>
+        <form id="filmForm">
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required min="1">
+            <div class="categories">
+                <label for="action">Ação:</label>
+                <input type="checkbox" id="action" name="category" value="Ação">
+                <label for="comedy">Comédia:</label>
+                <input type="checkbox" id="comedy" name="category" value="Comédia">
+                <label for="drama">Drama:</label>
+                <input type="checkbox" id="drama" name="category" value="Drama">
+                <label for="animation">Animação:</label>
+                <input type="checkbox" id="animation" name="category" value="Animação">
+                <label for="suspense">Suspense:</label>
+                <input type="checkbox" id="suspense" name="category" value="Suspense">
+                <label for="horror">Terror:</label>
+                <input type="checkbox" id="horror" name="category" value="Terror">
+                <label for="sciFi">Ficção Científica:</label>
+                <input type="checkbox" id="sciFi" name="category" value="Ficção Científica">
+                <label for="adventure">Aventura:</label>
+                <input type="checkbox" id="adventure" name="category" value="Aventura">
+            </div>
+            <button type="submit">Confirmar</button>
+        </form>
+        <div id="movieResults"></div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+
